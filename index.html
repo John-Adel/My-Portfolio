@@ -45,14 +45,14 @@
       <a href="#hero" class="font-display font-semibold text-lg tracking-tight">John Adel Samuel</a>
 
       <nav class="hidden lg:flex items-center gap-7 text-sm text-ink-muted">
-        <a href="#about" class="hover:text-ink transition-colors">About</a>
-        <a href="#journey" class="hover:text-ink transition-colors">Journey</a>
-        <a href="#skills" class="hover:text-ink transition-colors">Skills</a>
-        <a href="#services" class="hover:text-ink transition-colors">Services</a>
-        <a href="#case-study" class="hover:text-ink transition-colors">Case Study</a>
-        <a href="#showcase" class="hover:text-ink transition-colors">Showcase</a>
-        <a href="#credentials" class="hover:text-ink transition-colors">Credentials</a>
-        <a href="#contact" class="hover:text-ink transition-colors">Contact</a>
+        <a href="#about" class="nav-link hover:text-ink transition-colors">About</a>
+        <a href="#journey" class="nav-link hover:text-ink transition-colors">Journey</a>
+        <a href="#skills" class="nav-link hover:text-ink transition-colors">Skills</a>
+        <a href="#services" class="nav-link hover:text-ink transition-colors">Services</a>
+        <a href="#case-study" class="nav-link hover:text-ink transition-colors">Case Study</a>
+        <a href="#showcase" class="nav-link hover:text-ink transition-colors">Showcase</a>
+        <a href="#credentials" class="nav-link hover:text-ink transition-colors">Credentials</a>
+        <a href="#contact" class="nav-link hover:text-ink transition-colors">Contact</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -117,6 +117,11 @@
               class="inline-flex items-center justify-center rounded-full bg-accent text-[#052024] font-medium px-7 py-3.5 hover:opacity-90 transition-opacity">
               See a case study
             </a>
+            <a href="assets/John_Adel_Samuel.pdf" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 justify-center rounded-full border border-[var(--hairline)] px-7 py-3.5 hover:border-accent transition-colors">
+              View my CV
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M12 15l-4-4M12 15l4-4M4 21h16"/></svg>
+            </a>
             <a href="#contact"
               class="inline-flex items-center justify-center rounded-full border border-[var(--hairline)] px-7 py-3.5 hover:border-accent transition-colors">
               Get in touch
@@ -140,27 +145,28 @@
   <!-- ============ ABOUT ============ -->
   <section id="about" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <div class="grid lg:grid-cols-[1fr_0.7fr] gap-14 lg:gap-16">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
+        About
+      </h2>
+      <div class="heading-line reveal-line"></div>
 
-        <div>
-          <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-8 max-w-md">
-            About
-          </h2>
+      <div class="grid lg:grid-cols-[1fr_0.7fr] gap-14 lg:gap-16 mt-8">
 
+        <div class="reveal">
           <div class="space-y-6 text-ink-muted text-lg leading-relaxed max-w-2xl">
             <p>
-              John is a computer science undergraduate at Zagazig National University, where his coursework sits inside the university's Medical Informatics track. That academic label undersells what he actually does day to day: build and test predictive models the same way whether the columns in front of him describe patients, customers, or transactions. The math underneath doesn't change — only the domain does, and he's set out to prove that versatility rather than assume it.
+              I'm a computer science undergraduate at Zagazig National University, where my coursework sits inside the university's Medical Informatics track. That academic label undersells what I actually do day to day: build and test predictive models the same way whether the columns in front of me describe patients, customers, or transactions. The math underneath doesn't change — only the domain does, and I've set out to prove that versatility rather than assume it.
             </p>
             <p>
-              Outside the classroom, he edits video for 180 Daraga's media team at Cairo University, cutting reels and event coverage in Adobe Premiere Pro and After Effects. That habit carries into his data work: when a model or a pipeline is finished, he doesn't stop at a notebook — he builds the explainer that makes the result legible to someone who has never opened Jupyter.
+              Outside the classroom, I edit video for 180 Daraga's media team at Cairo University, cutting reels and event coverage in Adobe Premiere Pro and After Effects. That habit carries into my data work: when a model or a pipeline is finished, I don't stop at a notebook — I build the explainer that makes the result legible to someone who has never opened Jupyter.
             </p>
             <p>
-              He's currently training as a Machine Learning Trainee with the Digital Egypt Pioneers Initiative, under Egypt's Ministry of Communications and Information Technology, and has delivered freelance data and video work on international platforms alongside his degree.
+              I'm currently training as a Machine Learning Trainee with the Digital Egypt Pioneers Initiative, under Egypt's Ministry of Communications and Information Technology, and I've delivered freelance data and video work on international platforms alongside my degree.
             </p>
           </div>
         </div>
 
-        <div class="lg:pt-[4.75rem]">
+        <div class="lg:pt-2 reveal" style="transition-delay: 150ms;">
           <dl class="divide-y divide-[var(--hairline)] border-t border-[var(--hairline)]">
             <div class="py-5 grid grid-cols-[auto_1fr] gap-x-6">
               <dt class="text-sm text-ink-muted">Based in</dt>
@@ -188,165 +194,129 @@
   <!-- ============ EDUCATION & JOURNEY ============ -->
   <section id="journey" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-14 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Education &amp; journey
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <ol class="relative border-l border-[var(--hairline)] pl-8 space-y-14 max-w-2xl">
+      <div id="journey-line" class="relative max-w-2xl mt-14">
+        <div class="absolute left-0 top-0 bottom-0 w-px bg-[var(--hairline)]"></div>
+        <div id="journey-line-progress" class="absolute left-0 top-0 w-[2px] bg-accent" style="height:0%"></div>
 
-        <li class="relative">
-          <span class="absolute -left-[2.15rem] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
-          <p class="text-sm text-ink-muted mb-2">November 2025 — ongoing</p>
-          <h3 class="font-display font-semibold text-xl mb-1">Video Committee Member</h3>
-          <p class="text-sm text-ink-muted mb-3">180 Daraga, Cairo University</p>
-          <p class="text-ink-muted leading-relaxed">
-            Producing animated reels and editing event coverage for the group's media team, using Adobe Premiere Pro, After Effects, and Audacity.
-          </p>
-        </li>
+        <ol class="border-l border-[var(--hairline)] space-y-14 max-w-2xl">
 
-        <li class="relative">
-          <span class="absolute -left-[2.15rem] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
-          <p class="text-sm text-ink-muted mb-2">July 2026 — January 2027 · in progress</p>
-          <h3 class="font-display font-semibold text-xl mb-1">Machine Learning Trainee</h3>
-          <p class="text-sm text-ink-muted mb-3">Digital Egypt Pioneers Initiative (DEPI), Ministry of Communications and Information Technology</p>
-          <p class="text-ink-muted leading-relaxed">
-            Training in machine learning frameworks, professional communication, and freelance business mechanics; collaborating with a cross-functional team on a graduation project; and delivering freelance technical work that generated $300 in revenue on global platforms.
-          </p>
-        </li>
+          <li class="relative reveal-up pl-8" style="transition-delay: 0ms;">
+            <span class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
+            <p class="text-sm text-ink-muted mb-2">November 2025 — ongoing</p>
+            <h3 class="font-display font-semibold text-xl mb-1">Video Committee Member</h3>
+            <p class="text-sm text-ink-muted mb-3">180 Daraga, Cairo University</p>
+            <p class="text-ink-muted leading-relaxed">
+              I produce animated reels and edit event coverage for the group's media team, using Adobe Premiere Pro, After Effects, and Audacity.
+            </p>
+          </li>
 
-        <li class="relative">
-          <span class="absolute -left-[2.15rem] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
-          <p class="text-sm text-ink-muted mb-2">Expected 2027</p>
-          <h3 class="font-display font-semibold text-xl mb-1">B.Sc. Computer Science</h3>
-          <p class="text-sm text-ink-muted mb-3">Zagazig National University — Medical Informatics track</p>
-          <p class="text-ink-muted leading-relaxed">
-            Currently maintaining a 3.92 / 4.00 GPA.
-          </p>
-        </li>
+          <li class="relative reveal-up pl-8" style="transition-delay: 150ms;">
+            <span class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
+            <p class="text-sm text-ink-muted mb-2">July 2026 — January 2027 · in progress</p>
+            <h3 class="font-display font-semibold text-xl mb-1">Machine Learning Trainee</h3>
+            <p class="text-sm text-ink-muted mb-3">Digital Egypt Pioneers Initiative (DEPI), Ministry of Communications and Information Technology</p>
+            <p class="text-ink-muted leading-relaxed">
+              I'm training in machine learning frameworks, professional communication, and freelance business mechanics; collaborating with a cross-functional team on a graduation project; and delivering freelance technical work that's generated $300 in revenue on global platforms.
+            </p>
+          </li>
 
-      </ol>
+          <li class="relative reveal-up pl-8" style="transition-delay: 300ms;">
+            <span class="absolute -left-[6px] top-1.5 w-3 h-3 rounded-full bg-accent"></span>
+            <p class="text-sm text-ink-muted mb-2">Expected 2027</p>
+            <h3 class="font-display font-semibold text-xl mb-1">B.Sc. Computer Science</h3>
+            <p class="text-sm text-ink-muted mb-3">Zagazig National University — Medical Informatics track</p>
+            <p class="text-ink-muted leading-relaxed">
+              I'm currently maintaining a 3.92 / 4.00 GPA.
+            </p>
+          </li>
+
+        </ol>
+      </div>
     </div>
   </section>
 
   <!-- ============ SKILLS MATRIX ============ -->
   <section id="skills" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-14 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Skills
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <div class="grid sm:grid-cols-2 gap-x-14 gap-y-9 max-w-3xl">
+      <div class="reveal max-w-3xl mt-16">
+        <div class="relative h-[300px] sm:h-[380px] ml-12 mr-2">
 
-        <div class="skill-item" data-skill-percent="80">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Pandas</span>
-            <span class="skill-value text-ink-muted">80%</span>
+          <!-- gridlines + y-axis (% proficiency) -->
+          <div class="absolute inset-0 flex flex-col-reverse justify-between pointer-events-none">
+            <div class="relative border-t border-[var(--hairline)]">
+              <span class="absolute -left-11 -top-2 w-9 text-right text-[11px] text-ink-muted">0%</span>
+            </div>
+            <div class="relative border-t border-[var(--hairline)]">
+              <span class="absolute -left-11 -top-2 w-9 text-right text-[11px] text-ink-muted">25%</span>
+            </div>
+            <div class="relative border-t border-[var(--hairline)]">
+              <span class="absolute -left-11 -top-2 w-9 text-right text-[11px] text-ink-muted">50%</span>
+            </div>
+            <div class="relative border-t border-[var(--hairline)]">
+              <span class="absolute -left-11 -top-2 w-9 text-right text-[11px] text-ink-muted">75%</span>
+            </div>
+            <div class="relative border-t border-[var(--hairline)]">
+              <span class="absolute -left-11 -top-2 w-9 text-right text-[11px] text-ink-muted">100%</span>
+            </div>
           </div>
-          <div class="skill-track" role="progressbar" aria-label="Pandas proficiency" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
+
+          <!-- points: x = scattered position, y = proficiency -->
+          <div class="skill-point" style="left:10%; transition-delay:0ms;" data-target-bottom="80">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Pandas · 80%</span>
           </div>
+          <div class="skill-point" style="left:68%; transition-delay:70ms;" data-target-bottom="80">
+            <span class="skill-dot"></span>
+            <span class="skill-label">SQL · 80%</span>
+          </div>
+          <div class="skill-point" style="left:38%; transition-delay:140ms;" data-target-bottom="70">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Python · 70%</span>
+          </div>
+          <div class="skill-point" style="left:90%; transition-delay:210ms;" data-target-bottom="70">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Git · 70%</span>
+          </div>
+          <div class="skill-point" style="left:18%; transition-delay:280ms;" data-target-bottom="60">
+            <span class="skill-dot"></span>
+            <span class="skill-label">NumPy · 60%</span>
+          </div>
+          <div class="skill-point" style="left:76%; transition-delay:350ms;" data-target-bottom="60">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Seaborn · 60%</span>
+          </div>
+          <div class="skill-point" style="left:52%; transition-delay:420ms;" data-target-bottom="55">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Matplotlib · 55%</span>
+          </div>
+          <div class="skill-point" style="left:30%; transition-delay:490ms;" data-target-bottom="50">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Scikit-learn · 50%</span>
+          </div>
+          <div class="skill-point" style="left:84%; transition-delay:560ms;" data-target-bottom="40">
+            <span class="skill-dot"></span>
+            <span class="skill-label">R · 40%</span>
+          </div>
+          <div class="skill-point" style="left:60%; transition-delay:630ms;" data-target-bottom="35">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Plotly · 35%</span>
+          </div>
+          <div class="skill-point" style="left:6%; transition-delay:700ms;" data-target-bottom="30">
+            <span class="skill-dot"></span>
+            <span class="skill-label">Tableau · 30%</span>
+          </div>
+
         </div>
-
-        <div class="skill-item" data-skill-percent="80">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">SQL</span>
-            <span class="skill-value text-ink-muted">80%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="SQL proficiency" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="70">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Python</span>
-            <span class="skill-value text-ink-muted">70%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Python proficiency" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="70">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Git</span>
-            <span class="skill-value text-ink-muted">70%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Git proficiency" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="60">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">NumPy</span>
-            <span class="skill-value text-ink-muted">60%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="NumPy proficiency" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="60">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Seaborn</span>
-            <span class="skill-value text-ink-muted">60%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Seaborn proficiency" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="55">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Matplotlib</span>
-            <span class="skill-value text-ink-muted">55%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Matplotlib proficiency" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="50">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Scikit-learn</span>
-            <span class="skill-value text-ink-muted">50%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Scikit-learn proficiency" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="40">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">R</span>
-            <span class="skill-value text-ink-muted">40%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="R proficiency" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="35">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Plotly</span>
-            <span class="skill-value text-ink-muted">35%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Plotly proficiency" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" data-skill-percent="30">
-          <div class="flex justify-between items-baseline text-sm mb-2">
-            <span class="font-medium">Tableau</span>
-            <span class="skill-value text-ink-muted">30%</span>
-          </div>
-          <div class="skill-track" role="progressbar" aria-label="Tableau proficiency" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-            <div class="skill-fill"></div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -354,13 +324,14 @@
   <!-- ============ SERVICES ============ -->
   <section id="services" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-14 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Services
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <div class="grid md:grid-cols-2 gap-y-14 md:gap-x-14 max-w-4xl">
+      <div class="grid md:grid-cols-2 gap-y-14 md:gap-x-14 max-w-4xl mt-10">
 
-        <div>
+        <div class="reveal">
           <h3 class="font-display font-semibold text-xl sm:text-2xl mb-4 max-w-xs">
             Custom Machine Learning &amp; Predictive Modeling
           </h3>
@@ -380,7 +351,7 @@
           </ul>
         </div>
 
-        <div class="md:border-l md:border-[var(--hairline)] md:pl-14">
+        <div class="md:border-l md:border-[var(--hairline)] md:pl-14 reveal" style="transition-delay: 150ms;">
           <h3 class="font-display font-semibold text-xl sm:text-2xl mb-4 max-w-xs">
             Data Cleaning, Wrangling &amp; Exploratory Analysis
           </h3>
@@ -407,27 +378,32 @@
   <!-- ============ TECHNICAL CASE STUDY ============ -->
   <section id="case-study" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-6 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Case study
       </h2>
-      <p class="text-sm text-accent font-medium mb-5">Coming soon</p>
-      <p class="text-ink-muted leading-relaxed max-w-xl">
-        A full write-up of a Pandas- and NumPy-based predictive modeling project is in progress as part of John's DEPI graduation work. Once it's complete, this section will walk through the problem statement, the pipeline, and the results.
-      </p>
+      <div class="heading-line reveal-line"></div>
+
+      <div class="reveal mt-8">
+        <p class="text-sm text-accent font-medium mb-5">Coming soon</p>
+        <p class="text-ink-muted leading-relaxed max-w-xl">
+          A full write-up of a Pandas- and NumPy-based predictive modeling project is in progress as part of my DEPI graduation work. Once it's complete, this section will walk through the problem statement, the pipeline, and the results.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- ============ CREATIVE VIDEO SHOWCASE ============ -->
   <section id="showcase" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-14 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Showcase
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <div class="grid md:grid-cols-2 gap-14">
+      <div class="grid md:grid-cols-2 gap-14 mt-10">
 
-        <div>
-          <div class="aspect-video rounded-xl overflow-hidden border border-[var(--hairline)]">
+        <div class="reveal">
+          <div class="showcase-video aspect-video rounded-xl overflow-hidden border border-[var(--hairline)]">
             <iframe
               class="w-full h-full"
               src="https://www.youtube.com/embed/RTFTcGeMmmI"
@@ -439,12 +415,12 @@
           </div>
           <h3 class="font-display font-semibold text-xl mt-6 mb-2">Juniors Journey — Teaser</h3>
           <p class="text-ink-muted leading-relaxed">
-            A teaser for 180 Daraga's Juniors Journey initiative, where the team visits schools to teach students how to code. Written, animated, and edited independently in Adobe After Effects.
+            A teaser for 180 Daraga's Juniors Journey initiative, where the team visits schools to teach students how to code. I wrote, animated, and edited this independently in Adobe After Effects.
           </p>
         </div>
 
-        <div>
-          <div class="aspect-video rounded-xl overflow-hidden border border-[var(--hairline)]">
+        <div class="reveal" style="transition-delay: 150ms;">
+          <div class="showcase-video aspect-video rounded-xl overflow-hidden border border-[var(--hairline)]">
             <iframe
               class="w-full h-full"
               src="https://www.youtube.com/embed/gbww-aOH1zw"
@@ -456,7 +432,7 @@
           </div>
           <h3 class="font-display font-semibold text-xl mt-6 mb-2">New Stage — Opening Sketch</h3>
           <p class="text-ink-muted leading-relaxed">
-            The opening sketch for New Stage, 180 Daraga's flagship annual event introducing students to the different tracks within computer science. This is the first entry in a running sketch series — the 2026 edition marks the event's 19th year.
+            New Stage is 180 Daraga's flagship annual event introducing students to the different tracks within computer science. I edited this opening sketch, the first entry in a running series — the 2026 edition marks the event's 19th year.
           </p>
         </div>
 
@@ -468,10 +444,13 @@
   <section id="credentials" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
 
-      <div class="flex items-end justify-between mb-10 max-w-3xl">
-        <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight">
-          Credentials
-        </h2>
+      <div class="flex items-end justify-between max-w-3xl">
+        <div>
+          <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight">
+            Credentials
+          </h2>
+          <div class="heading-line reveal-line"></div>
+        </div>
         <div class="hidden sm:flex gap-2">
           <button id="credentials-prev" type="button" aria-label="Previous certificate"
             class="grid place-items-center w-10 h-10 rounded-full border border-[var(--hairline)] hover:border-accent transition-colors">
@@ -484,101 +463,102 @@
         </div>
       </div>
 
-      <div id="credentials-track" class="flex gap-6 overflow-x-auto pb-2 -mx-5 px-5 sm:mx-0 sm:px-0">
+      <div id="credentials-track" class="reveal flex gap-6 overflow-x-auto pb-2 -mx-5 px-5 sm:mx-0 sm:px-0 mt-8">
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Introduction to Data and Data Science.png" alt="Introduction to Data and Data Science certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Introduction to Data and Data Science</h3>
           <p class="text-sm text-ink-muted">365 Data Science · March 2026</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Introduction to Python-1.png" alt="Introduction to Python certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Introduction to Python</h3>
           <p class="text-sm text-ink-muted">365 Data Science · November 2024</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Introduction to R programming-1.png" alt="Introduction to R Programming certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Introduction to R Programming</h3>
           <p class="text-sm text-ink-muted">365 Data Science · November 2024</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Introduction to Jypter.png" alt="Introduction to Jupyter certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Introduction to Jupyter</h3>
           <p class="text-sm text-ink-muted">365 Data Science · November 2024</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Statistics-1.png" alt="Statistics certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Statistics</h3>
           <p class="text-sm text-ink-muted">365 Data Science · March 2026</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/Probability-1.png" alt="Probability certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Probability</h3>
           <p class="text-sm text-ink-muted">365 Data Science · May 2026</p>
         </div>
 
         <div class="credential-card flex-none w-[280px] sm:w-[320px]">
           <img src="assets/certs/HarvardX PH125.1x Certificate _ edX.png" alt="HarvardX Data Science: R Basics certificate"
-            class="w-full aspect-[1200/843] object-cover rounded-lg border border-[var(--hairline)]">
+            class="w-full h-48 sm:h-56 object-cover rounded-lg border border-[var(--hairline)]">
           <h3 class="font-medium mt-4 mb-1">Data Science: R Basics</h3>
           <p class="text-sm text-ink-muted">HarvardX (edX) · May 2026</p>
         </div>
 
       </div>
 
-      <!-- Continued learning: categorized, non-carousel lists -->
+      <!-- Continued learning: categorized lists, each item links to the real certificate -->
       <div class="mt-20 grid md:grid-cols-3 gap-x-10 gap-y-12 max-w-5xl">
 
-        <div>
+        <div class="reveal">
           <h4 class="font-display font-semibold text-base mb-4">Research &amp; domain coursework</h4>
           <ul class="divide-y divide-[var(--hairline)] border-t border-[var(--hairline)] text-sm text-ink-muted">
-            <li class="py-3">R Programming: From Basics to Data Analysis — OmniGenics</li>
-            <li class="py-3">Statistical Data Analysis Using R Language — SRTA-City</li>
-            <li class="py-3">Molecular Docking with AutoDock4 — Discovery Boulevard</li>
-            <li class="py-3">Bioinformatics Winter School (85 hrs) — Biosyn</li>
-            <li class="py-3">Computational Neuroscience — Biosyn</li>
-            <li class="py-3">Introduction to Immunology — Biosyn</li>
-            <li class="py-3">How to Read and Understand a Research Paper — Biosyn</li>
-            <li class="py-3">Study Design in Clinical Research — Biosyn</li>
-            <li class="py-3">Ethical Issues in Clinical Research — Biosyn</li>
+            <li><a href="assets/certs/Omnigenics-candidate-18-1.png" target="_blank" rel="noopener" class="cert-link"><span>R Programming: From Basics to Data Analysis — OmniGenics</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/onlines school 2.docx-28-1.png" target="_blank" rel="noopener" class="cert-link"><span>Statistical Data Analysis Using R Language — SRTA-City</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Molecular Docking with Autodock4-1.png" target="_blank" rel="noopener" class="cert-link"><span>Molecular Docking with AutoDock4 — Discovery Boulevard</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/John Adel Samuel _20241207_221519_٠٠٠٠-1.png" target="_blank" rel="noopener" class="cert-link"><span>Bioinformatics Winter School (85 hrs) — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Computational Neuroscience.png" target="_blank" rel="noopener" class="cert-link"><span>Computational Neuroscience — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Introduction to Immunology.png" target="_blank" rel="noopener" class="cert-link"><span>Introduction to Immunology — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/How to read and understand a research paper.png" target="_blank" rel="noopener" class="cert-link"><span>How to Read and Understand a Research Paper — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Study design in clinical research-1.png" target="_blank" rel="noopener" class="cert-link"><span>Study Design in Clinical Research — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Some concepts in clinical research(Ethical issues in clinical research)-1.png" target="_blank" rel="noopener" class="cert-link"><span>Some Concepts in Clinical Research — Biosyn</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="reveal" style="transition-delay: 120ms;">
           <h4 class="font-display font-semibold text-base mb-4">Professional &amp; soft-skills development</h4>
           <ul class="divide-y divide-[var(--hairline)] border-t border-[var(--hairline)] text-sm text-ink-muted">
-            <li class="py-3">CV Building — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Data-Driven Thinking — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Emotional Intelligence — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">How to Learn — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Interview Mastery — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Marketing DNA — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Mr. GPT Round 5 — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Land Opportunities, Brand Yourself — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Productivity Mode — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Stress Management — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">The Art of Portfolio Building — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Time Management — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Investment &amp; Trading Mindset — GDG on Campus, Al-Azhar University</li>
-            <li class="py-3">Techne Summit — CIC Entrepreneurs &amp; Be Professional</li>
+            <li><a href="assets/certs/CV Building.png" target="_blank" rel="noopener" class="cert-link"><span>CV Building — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Data-Driven Thinking.png" target="_blank" rel="noopener" class="cert-link"><span>Data-Driven Thinking — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Emotional Intelligence.png" target="_blank" rel="noopener" class="cert-link"><span>Emotional Intelligence — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/How to Learn.jpg" target="_blank" rel="noopener" class="cert-link"><span>How to Learn — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/interview mastery.png" target="_blank" rel="noopener" class="cert-link"><span>Interview Mastery — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Marketing DNA.png" target="_blank" rel="noopener" class="cert-link"><span>Marketing DNA — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Mr. GPT.png" target="_blank" rel="noopener" class="cert-link"><span>Mr. GPT Round 5 — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Personal Branding.png" target="_blank" rel="noopener" class="cert-link"><span>Land Opportunities, Brand Yourself — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Productivity Mode.png" target="_blank" rel="noopener" class="cert-link"><span>Productivity Mode — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Stress Managment.png" target="_blank" rel="noopener" class="cert-link"><span>Stress Management — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/The Art of Portifolio Building.png" target="_blank" rel="noopener" class="cert-link"><span>The Art of Portfolio Building — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Time Managment.png" target="_blank" rel="noopener" class="cert-link"><span>Time Management — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Trading and investment mindset.png" target="_blank" rel="noopener" class="cert-link"><span>Investment &amp; Trading Mindset — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/IMG_20260501_073942.jpg.jpeg" target="_blank" rel="noopener" class="cert-link"><span>Techne Summit — CIC Entrepreneurs &amp; Be Professional</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
+            <li><a href="assets/certs/Your First Dollar.png" target="_blank" rel="noopener" class="cert-link"><span>Your First Dollar — GDG on Campus, Al-Azhar University</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
           </ul>
         </div>
 
-        <div>
+        <div class="reveal" style="transition-delay: 240ms;">
           <h4 class="font-display font-semibold text-base mb-4">Language certification</h4>
           <ul class="divide-y divide-[var(--hairline)] border-t border-[var(--hairline)] text-sm text-ink-muted">
-            <li class="py-3">English Conversational Skills, Levels 1–3 — British Council via Edraak</li>
+            <li><a href="assets/certs/Edraak certificate.png" target="_blank" rel="noopener" class="cert-link"><span>English Conversational Skills, Levels 1–3 — British Council via Edraak</span><svg xmlns="http://www.w3.org/2000/svg" class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg></a></li>
           </ul>
         </div>
 
@@ -590,11 +570,12 @@
   <!-- ============ VALUE & ENGINEERING GUARANTEE ============ -->
   <section id="guarantee" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-10 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Guarantee
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <div class="border border-[var(--hairline)] rounded-2xl p-8 sm:p-12 max-w-4xl">
+      <div class="border border-[var(--hairline)] rounded-2xl p-8 sm:p-12 max-w-4xl reveal mt-10">
         <p class="text-ink-muted leading-relaxed mb-10 max-w-xl">
           A few commitments that apply to every project, not just the ones with a client watching.
         </p>
@@ -628,20 +609,23 @@
   <!-- ============ CONTACT ============ -->
   <section id="contact" class="border-t border-[var(--hairline)]">
     <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight mb-10 max-w-md">
+      <h2 class="font-display font-semibold text-3xl sm:text-4xl tracking-tight max-w-md">
         Contact
       </h2>
+      <div class="heading-line reveal-line"></div>
 
-      <a href="mailto:john.adel.samuel@gmail.com"
-        class="inline-block font-display font-semibold text-3xl sm:text-5xl tracking-tight hover:text-accent transition-colors break-all">
-        john.adel.samuel@gmail.com
-      </a>
+      <div class="reveal mt-10">
+        <a href="mailto:john.adel.samuel@gmail.com"
+          class="inline-block font-display font-semibold text-3xl sm:text-5xl tracking-tight hover:text-accent transition-colors break-all">
+          john.adel.samuel@gmail.com
+        </a>
 
-      <div class="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm text-ink-muted">
-        <a href="tel:+201201559329" class="hover:text-ink transition-colors">+20 120 155 9329</a>
-        <span>Shubra, Cairo, Egypt</span>
-        <a href="https://www.linkedin.com/in/johnadelsamuel" target="_blank" rel="noopener" class="hover:text-ink transition-colors">LinkedIn</a>
-        <a href="https://github.com/John-Adel" target="_blank" rel="noopener" class="hover:text-ink transition-colors">GitHub</a>
+        <div class="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm text-ink-muted">
+          <a href="tel:+201201559329" class="hover:text-ink transition-colors">+20 120 155 9329</a>
+          <span>Shubra, Cairo, Egypt</span>
+          <a href="https://www.linkedin.com/in/johnadelsamuel" target="_blank" rel="noopener" class="hover:text-ink transition-colors">LinkedIn</a>
+          <a href="https://github.com/John-Adel" target="_blank" rel="noopener" class="hover:text-ink transition-colors">GitHub</a>
+        </div>
       </div>
     </div>
   </section>
